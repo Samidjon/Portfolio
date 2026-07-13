@@ -53,4 +53,31 @@ export const projects = [
     github: "https://github.com/Samidjon/Restaran-System",
     demo: "#",
   },
+  {
+    id: 4,
+    title: "PhishGuard",
+    description:
+      "Paste URL and it analyzes the domain, SSL cert, page structure, and contain against known phishing terms (Do not contain live demo )",
+    technologies: ["Python", "CustomTkinter", "Requests", "BeautifulSoup4", "Socket", "SSL", "Tkinter", "JSON", "Threading"],
+    github: "https://github.com/Samidjon/PhishGuard",
+    demo: "#",
+  },
+  {
+    id: 5,
+    title: "Port-Scanner",
+    description:
+      "A desktop application for scanning network ports and identifying open ports. (Do not contain live demo )",
+    technologies: ["Python", "CustomTkinter", "Socket Programming", "ThreadPoolExecutor", "JSON", "CSV", "PyInstaller"],
+    github: "https://github.com/Samidjon/Port-Scanner",
+    demo: "#",
+  },
+  {
+    id: 6,
+    title: "3D Zoo Map",
+    description:
+      "A 3D interactive map of a zoo built with Three.js, allowing users to explore the zoo and view information about different animals. (Do not contain live demo )",
+    technologies: ["Three.js", "HTML", "Css"],
+    github: "https://github.com/Samidjon/3D-Zoo-Map",
+    demo: "#",
+  },
 ];
