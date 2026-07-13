@@ -76,7 +76,7 @@ export const projects = [
     title: "3D Zoo Map",
     description:
       "A 3D interactive map of a zoo built with Three.js, allowing users to explore the zoo and view information about different animals. (Do not contain live demo )",
-    technologies: ["Three.js", "HTML", "Css"],
+    technologies: ["Three.js", "HTML", "CSS", "JavaScript"],
     github: "https://github.com/Samidjon/3D-Zoo-Map",
     demo: "#",
   },
