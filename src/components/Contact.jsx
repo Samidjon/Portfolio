@@ -18,8 +18,8 @@ function Contact() {
           </div>
 
           <div className="contact-links">
-            <a href="mailto:suleyman2.sn@gmail.com">
-              suleyman2.sn@gmail.com
+            <a href="mailto:samidnormuradov06@gmail.com">
+              samidnormuradov06@gmail.com
             </a>
 
             <a
