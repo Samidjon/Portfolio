@@ -80,4 +80,13 @@ export const projects = [
     github: "https://github.com/Samidjon/3D-Zoo-Map",
     demo: "#",
   },
+  {
+    id: 7,
+    title: "Sirius Class Website",
+    description:
+      "A modern, responsive website for Sirius Class, featuring a clean design and easy navigation.",
+    technologies: ["HTML", "CSS", "JavaScript", "Node JS", "Express.js"],
+    github: "https://github.com/Samidjon/SiriusClass",
+    demo: "https://sirius-class.vercel.app/",
+  },
 ];
