@@ -89,4 +89,13 @@ export const projects = [
     github: "https://github.com/Samidjon/SiriusClass",
     demo: "https://sirius-class.vercel.app/",
   },
+  {
+    id: 8,
+    title: "Web Security Scanner",
+    description:
+      "A web application for scanning and identifying security vulnerabilities in websites. (do not contain demo)",
+    technologies: ["Python", "PySide6", "Requests", "Beautiful Soup 4", "cryptography", "Socket", "SSL", "Threading", "JSON", "QThread", "QSettings", "PyInstaller", "Git и GitHub", "Visual Studio Code", "Jinja2", "SQLite", "dnspython"],
+    github: "https://github.com/Samidjon/web-security-analyzer",
+    demo: "#",
+  },
 ];
