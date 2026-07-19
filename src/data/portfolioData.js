@@ -98,4 +98,13 @@ export const projects = [
     github: "https://github.com/Samidjon/web-security-analyzer",
     demo: "#",
   },
+  {
+    id: 9,
+    title: "Hacker Life Game",
+    description:
+      "Hacker Life is a browser-based cybersecurity career simulator built with React and TypeScript. Start as a beginner, complete interactive contracts, earn credits and experience, unlock skills, purchase upgrades and grow your reputation",
+    technologies: ["React", "TypeScript", "Vite", "CSS", "LocalStorage"],
+    github: "https://github.com/Samidjon/Hacker-Life",
+    demo: "https://hacker-life.vercel.app/",
+  },
 ];
