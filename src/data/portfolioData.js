@@ -107,4 +107,13 @@ export const projects = [
     github: "https://github.com/Samidjon/Hacker-Life",
     demo: "https://hacker-life.vercel.app/",
   },
+  {
+    id: 10,
+    title: "Math Quest Game",
+    description:
+      "A browser-based math game built with React and TypeScript. Players can solve various math problems and track their progress.",
+    technologies: ["React", "TypeScript", "Vite", "CSS", "LocalStorage"],
+    github: "https://github.com/Samidjon/Math-Quest",
+    demo: "https://mathquest-chi.vercel.app/",
+  },
 ];
