@@ -1,0 +1,72 @@
+<svg width="480" height="540" viewBox="0 0 480 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hoodie" x1="138" y1="248" x2="365" y2="484" gradientUnits="userSpaceOnUse"><stop stop-color="#B7A3FF"/><stop offset=".5" stop-color="#8C72F5"/><stop offset="1" stop-color="#674DCE"/></linearGradient>
+    <linearGradient id="skin" x1="182" y1="93" x2="293" y2="243" gradientUnits="userSpaceOnUse"><stop stop-color="#FFDDBB"/><stop offset="1" stop-color="#F6B88F"/></linearGradient>
+    <linearGradient id="hair" x1="155" y1="46" x2="313" y2="153" gradientUnits="userSpaceOnUse"><stop stop-color="#48404C"/><stop offset=".55" stop-color="#211F2B"/><stop offset="1" stop-color="#13121A"/></linearGradient>
+    <linearGradient id="laptop" x1="90" y1="333" x2="376" y2="480" gradientUnits="userSpaceOnUse"><stop stop-color="#F7F4FF"/><stop offset="1" stop-color="#C4B9EA"/></linearGradient>
+    <linearGradient id="screen" x1="126" y1="342" x2="347" y2="449" gradientUnits="userSpaceOnUse"><stop stop-color="#292633"/><stop offset="1" stop-color="#49405D"/></linearGradient>
+    <filter id="shadow" x="42" y="20" width="400" height="500" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="13"/></filter>
+  </defs>
+  <ellipse cx="241" cy="484" rx="166" ry="25" fill="#8571C7" opacity=".14" filter="url(#shadow)"/>
+  <!-- legs and sneakers -->
+  <path d="M177 377C158 409 159 440 185 456L235 463C260 459 270 444 254 425L231 376L177 377Z" fill="#24222D"/>
+  <path d="M259 378C250 411 267 438 299 448L342 447C361 442 360 426 343 414L303 371L259 378Z" fill="#302C3B"/>
+  <path d="M175 431C159 440 151 451 156 464C162 479 190 484 221 479L258 472C268 466 259 451 241 445L198 430L175 431Z" fill="#F9F7FF"/>
+  <path d="M284 426C271 436 274 452 289 463C307 476 338 476 359 464C370 456 357 443 341 435L314 420L284 426Z" fill="#F9F7FF"/>
+  <path d="M173 454L245 457M177 462L238 465M296 450L349 451M300 458L341 460" stroke="#C6BCE9" stroke-width="5" stroke-linecap="round"/>
+  <!-- hoodie body -->
+  <path d="M174 231C143 244 123 272 117 315L102 402C100 419 113 431 131 432L341 432C362 430 373 416 365 396L339 295C331 264 306 243 274 235L174 231Z" fill="url(#hoodie)"/>
+  <path d="M163 252C184 279 220 289 255 278C283 269 302 253 307 240L281 224L175 224L163 252Z" fill="#7964D4"/>
+  <!-- arms -->
+  <path d="M150 273C125 290 108 323 92 345C82 361 92 381 110 386C124 390 134 377 145 358L186 306L150 273Z" fill="url(#hoodie)"/>
+  <path d="M300 269C321 279 338 301 358 321C372 335 389 335 400 322C409 311 399 298 387 286L342 246L300 269Z" fill="url(#hoodie)"/>
+  <path d="M83 342C75 341 68 350 72 361C75 374 88 381 101 378L116 368L105 348L83 342Z" fill="url(#skin)"/>
+  <path d="M392 288C400 278 414 283 419 296C425 310 414 322 401 321L385 311L392 288Z" fill="url(#skin)"/>
+  <!-- neck -->
+  <path d="M197 206L198 243C214 263 247 269 270 240L266 203L197 206Z" fill="url(#skin)"/>
+  <!-- face -->
+  <path d="M169 114C169 78 193 58 235 58C280 58 302 89 299 135L293 181C287 217 257 239 225 232C195 225 177 203 173 174L169 114Z" fill="url(#skin)"/>
+  <!-- ears -->
+  <ellipse cx="168" cy="157" rx="17" ry="22" fill="#F8C19B"/>
+  <ellipse cx="298" cy="151" rx="15" ry="20" fill="#F4B38D"/>
+  <path d="M162 154C168 147 175 153 174 160" stroke="#DB916D" stroke-width="3" stroke-linecap="round"/>
+  <path d="M294 149C289 144 284 150 287 157" stroke="#DB916D" stroke-width="3" stroke-linecap="round"/>
+  <!-- hair silhouette -->
+  <path d="M159 143C142 120 146 91 164 76C161 52 188 35 207 48C225 24 251 39 259 49C285 42 307 61 304 83C326 99 317 124 304 139L293 160L283 123C264 121 250 109 243 91C220 117 195 125 175 121L174 158L159 143Z" fill="url(#hair)"/>
+  <path d="M161 88C152 68 172 50 189 61C195 43 216 43 223 60C237 38 260 53 258 71C278 56 297 71 289 91C309 91 315 111 298 127L291 145L279 113C252 121 230 108 224 91C211 112 190 118 173 112L168 137L158 121C147 110 150 96 161 88Z" fill="#302B37"/>
+  <path d="M166 94C177 75 196 77 203 90C212 69 233 69 242 86C253 70 274 81 271 96C287 89 298 99 294 111C275 118 259 110 248 101C226 120 198 124 174 116L166 132L160 113C157 105 160 99 166 94Z" fill="#191821"/>
+  <path d="M183 65C191 55 203 58 207 69M224 59C236 47 248 58 248 68M269 73C281 68 290 79 285 89" stroke="#4B4350" stroke-width="6" stroke-linecap="round"/>
+  <!-- eyebrows -->
+  <path d="M185 137C197 128 209 130 216 135M252 132C264 125 278 129 283 136" stroke="#342A2B" stroke-width="7" stroke-linecap="round"/>
+  <!-- eyes -->
+  <ellipse cx="202" cy="157" rx="14" ry="19" fill="#fff"/>
+  <ellipse cx="266" cy="154" rx="13" ry="18" fill="#fff"/>
+  <ellipse cx="205" cy="160" rx="8" ry="13" fill="#4D332C"/>
+  <ellipse cx="266" cy="157" rx="7.5" ry="12" fill="#4D332C"/>
+  <ellipse cx="207" cy="156" rx="3.7" ry="5" fill="#fff"/>
+  <ellipse cx="268" cy="153" rx="3.5" ry="4.5" fill="#fff"/>
+  <path d="M230 164C226 177 228 184 237 184" stroke="#D88E6E" stroke-width="3" stroke-linecap="round"/>
+  <path d="M211 198C226 210 247 208 258 195" stroke="#9D554D" stroke-width="4" stroke-linecap="round"/>
+  <path d="M212 199C226 204 245 203 257 195" stroke="#FFF0E6" stroke-width="2" stroke-linecap="round"/>
+  <ellipse cx="187" cy="184" rx="10" ry="6" fill="#F18E91" opacity=".38"/>
+  <ellipse cx="276" cy="181" rx="9" ry="6" fill="#F18E91" opacity=".32"/>
+  <!-- hoodie details -->
+  <path d="M195 245C202 269 230 282 253 267" stroke="#D4C9FF" stroke-width="4" stroke-linecap="round"/>
+  <path d="M211 271L207 293M245 273L252 293" stroke="#4F3BA5" stroke-width="4" stroke-linecap="round"/>
+  <path d="M206 295L204 324M254 294L258 323" stroke="#E4DFFF" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="204" cy="330" r="4" fill="#E4DFFF"/><circle cx="258" cy="329" r="4" fill="#E4DFFF"/>
+  <path d="M232 315L241 325L232 335L223 325L232 315Z" fill="#FFE36B"/>
+  <!-- laptop front -->
+  <path d="M116 328C117 321 123 316 131 316H338C346 316 351 322 352 329L371 430H92L116 328Z" fill="url(#laptop)" stroke="#B7ADD9" stroke-width="3"/>
+  <path d="M129 332H337L354 411H110L129 332Z" fill="url(#screen)"/>
+  <path d="M101 430H374L393 446C397 451 392 457 385 457H91C84 457 81 451 86 446L101 430Z" fill="#D9D2EF" stroke="#B7ADD9" stroke-width="2"/>
+  <path d="M208 439H267" stroke="#B3A9D5" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="229" cy="321" r="2" fill="#8E84B4"/>
+  <!-- screen code and stickers -->
+  <path d="M147 354L135 365L147 376M176 354L188 365L176 376M211 354L203 376" stroke="#AFA1FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M233 358H304M233 369H284M147 394H219M235 394H302" stroke="#72DDBD" stroke-width="4" stroke-linecap="round" opacity=".9"/>
+  <circle cx="313" cy="367" r="16" fill="#FFE36B" stroke="#FFF2AE" stroke-width="4"/>
+  <path d="M306 367L311 372L320 361" stroke="#5E4CB2" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="140" cy="418" r="10" fill="#FF9A8A"/><path d="M135 418L139 422L146 413" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M310 404L315 394L320 404L330 406L322 413L324 423L315 418L306 423L308 413L300 406L310 404Z" fill="#FFE36B"/>
+</svg>
