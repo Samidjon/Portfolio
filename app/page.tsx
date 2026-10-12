@@ -1,14 +1,14 @@
 "use client";
 
 import { useState, type ReactNode } from "react";
-import { motion } from "motion/react";
+import { motion, type Variants } from "motion/react";
 import {
   ArrowDown, ArrowDownRight, ArrowRight, ArrowUpRight, AtSign, Check, Code2,
   Github, Globe2, Heart, Linkedin, Mail, Menu, Sparkles, X,
 } from "lucide-react";
 import { projects, site, skills } from "@/data/site";
 
-const reveal = {
+const reveal: Variants = {
   hidden: { opacity: 0, y: 24 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
 };
