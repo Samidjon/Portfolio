@@ -1,0 +1,129 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ThemeToggle from '../components/ThemeToggle.svelte';
+import NekoCursor from '../components/NekoCursor.svelte';
+import DogBuddy from '../components/DogBuddy.svelte';
+import { site, projects, skills } from '../data/site';
+
+const featuredProjects = projects;
+---
+
+<BaseLayout>
+  <div class="simple-shell">
+    <header class="simple-header">
+      <a href="#home" class="simple-brand" aria-label="Samid — home">
+        <span class="brand-mark">s<span>.</span></span>
+        <span>samid<span class="brand-muted">.dev</span></span>
+      </a>
+
+      <nav class="simple-nav" aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-controls">
+        <a class="header-github" href={site.github} target="_blank" rel="noreferrer" aria-label="Open GitHub profile">GitHub <span aria-hidden="true">↗</span></a>
+        <ThemeToggle client:load />
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="simple-hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="hero-greeting"><span class="status-dot"></span> HELLO THERE!</p>
+          <h1 id="hero-title">Hi, I'm <span>Samid</span><span class="hero-period">.</span></h1>
+          <p class="hero-role">Software engineering student &amp; developer</p>
+          <p class="hero-description">{site.intro}</p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore projects <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href={`mailto:${site.email}`}>Get in touch <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <div class="social-buttons" aria-label="Social links">
+            <a class="social-button" href={site.github} target="_blank" rel="noreferrer"><span class="social-icon github-icon" aria-hidden="true">GH</span><span>GitHub</span><span class="social-arrow" aria-hidden="true">↗</span></a>
+            {site.linkedin && <a class="social-button" href={site.linkedin} target="_blank" rel="noreferrer"><span class="social-icon linkedin-icon" aria-hidden="true">in</span><span>LinkedIn</span><span class="social-arrow" aria-hidden="true">↗</span></a>}
+            <a class="social-button" href={`mailto:${site.email}`}><span class="social-icon mail-icon" aria-hidden="true">@</span><span>Email me</span><span class="social-arrow" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Pixel-inspired mascot illustration">
+          <div class="hero-art-glow"></div>
+          <img src="/mascot.svg" alt="Samid's pixel-inspired mascot" width="270" height="270" fetchpriority="high" />
+          <span class="hero-art-caption">that's me! :3</span>
+        </div>
+      </section>
+
+      <section class="simple-section projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="section-title-row">
+          <div>
+            <p class="section-eyebrow">A FEW THINGS I'VE MADE</p>
+            <h2 id="projects-title">Selected projects<span>.</span></h2>
+          </div>
+          <a class="text-button" href={site.github} target="_blank" rel="noreferrer">All projects <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="simple-projects">
+          {featuredProjects.map((project) => (
+            <article class="simple-project-card">
+              <div class="project-heading">
+                <span class={`project-symbol symbol-${project.visual}`} aria-hidden="true">{project.symbol}</span>
+                <span class="project-category">{project.category}</span>
+              </div>
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <div class="simple-tags">
+                {project.tags.map((tag) => <span>{tag}</span>)}
+              </div>
+              <div class="simple-project-footer">
+                <span class="project-state"><i></i>{project.status}</span>
+                {project.href ? <a class="project-open" href={project.href} target="_blank" rel="noreferrer">{project.hrefLabel} <span aria-hidden="true">↗</span></a> : <span class="project-open project-no-link">Personal prototype</span>}
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="simple-section about-section" id="about" aria-labelledby="about-title">
+        <div class="section-title-row">
+          <div>
+            <p class="section-eyebrow">A LITTLE ABOUT ME</p>
+            <h2 id="about-title">Curious by nature<span>.</span></h2>
+          </div>
+        </div>
+        <div class="about-content">
+          <div class="about-copy">
+            <p>I'm studying Software Engineering at Asia Pacific University in Malaysia. I enjoy building friendly, interactive websites, experimenting with games, and exploring how systems work behind the scenes.</p>
+            <p>I'm always learning and looking for opportunities to contribute, collaborate, and turn ideas into useful things.</p>
+            <p class="about-location"><span aria-hidden="true">⌖</span> {site.location} <span class="location-divider">·</span> APU</p>
+          </div>
+          <div class="about-toolkit">
+            <h3>Things I work with</h3>
+            <div class="simple-skills">
+              {skills.map((skill) => <span>{skill.name}</span>)}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="simple-contact" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="section-eyebrow">HAVE AN IDEA?</p>
+          <h2 id="contact-title">Let's make something cool<span>.</span></h2>
+          <p>Open to internships, freelance work, and fun collaborations.</p>
+        </div>
+        <a class="button button-primary contact-button" href={`mailto:${site.email}`}>Say hello <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="simple-footer">
+      <a href="#home" class="footer-brand">samid<span>.dev</span></a>
+      <p>Made with curiosity <span aria-hidden="true">♡</span> and a pixel cat.</p>
+      <span>© {new Date().getFullYear()} Samid</span>
+    </footer>
+  </div>
+
+  <NekoCursor client:load />
+  <DogBuddy client:load />
+</BaseLayout>
