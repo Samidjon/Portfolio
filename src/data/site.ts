@@ -93,6 +93,18 @@ export const projects = [
     symbol: '🛡️',
     status: 'Personal prototype',
   },
+  {
+    number: '08',
+    title: 'Frame Studio',
+    category: 'Design studio',
+    description: 'A creative space for visual storytelling and brand development, showcasing a range of design projects and collaborations.',
+    tags: ['Web design', 'Illustration', 'Branding'],
+    href: 'https://framestudio-gamma.vercel.app/',
+    hrefLabel: 'Visit website',
+    visual: 'studio',
+    symbol: '🎨',
+    status: 'Live project',
+  },
 ];
 
 export const skills = [
