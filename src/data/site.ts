@@ -105,6 +105,17 @@ export const projects = [
     symbol: '🎨',
     status: 'Live project',
   },
+  {
+    number: '09',
+    title: 'Shadow of the forgotten shrine',
+    category: '2D Game',
+    description: 'A 2D adventure game inspired by classic RPGs, featuring a mysterious shrine and an engaging storyline.',
+    tags: ['Game Development', 'Godot', 'Pixel Art'],
+    href: 'https://github.com/Samidjon/Shadow-of-the-forgotten-shrine',
+    visual: 'game',
+    symbol: '🎮',
+    status: 'Live project',
+  },
 ];
 
 export const skills = [
